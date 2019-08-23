@@ -1,11 +1,9 @@
-'use strict'
-
-const fs = require("fs");
-const os = require("os");
-const path = require("path");
+import fs from "fs";
+import os from "os";
+import path from "path";
 
 const appDirectory = fs.realpathSync(process.cwd());
-const tsConfigPath = path.resolve(appDirectory, "tsconfig.json")
+const tsConfigPath = path.resolve(appDirectory, "tsconfig.json");
 
 function initialiseTypescriptApp() {
   checkTypescriptIsInstalled();
@@ -51,5 +49,6 @@ function tsConfigExists() {
   return fs.existsSync(tsConfigPath);
 };
 
-// TODO probably run this from somewhere else instead of directly within this file.
-initialiseTypescriptApp()
+const run = initialiseTypescriptApp
+
+export default run
