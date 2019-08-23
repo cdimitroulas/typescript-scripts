@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A collection of scripts related to typescript development",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/cdimitroulas/typescript-scripts.git"
+    "type": "git",
+    "url": "https://github.com/cdimitroulas/typescript-scripts.git"
   },
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^12.7.2",
+    "ts-node": "^8.3.0",
     "typescript": "^3.5.3"
   }
 }
