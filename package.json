@@ -14,5 +14,9 @@
     "compiling"
   ],
   "author": "Christos Dimitroulas",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.7.2",
+    "typescript": "^3.5.3"
+  }
 }
