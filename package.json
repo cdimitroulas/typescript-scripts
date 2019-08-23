@@ -2,6 +2,10 @@
   "name": "@cdimitroulas/typescript-scripts",
   "version": "1.0.0",
   "description": "A collection of scripts related to typescript development",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/cdimitroulas/typescript-scripts.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
