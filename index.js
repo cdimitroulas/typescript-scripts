@@ -2,6 +2,8 @@
 
 const tsNode = require('ts-node')
 
+const { init } = require('./dist')
+
 tsNode.register({})
 
 const args = process.argv.slice(2)
@@ -14,7 +16,7 @@ if (!scriptName) {
 
 switch (scriptName) {
   case 'init':
-    console.log('should run the init script here')
+    init()
     process.exit(0)
 
   default:

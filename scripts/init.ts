@@ -49,6 +49,4 @@ function tsConfigExists() {
   return fs.existsSync(tsConfigPath);
 };
 
-const run = initialiseTypescriptApp
-
-export default run
+export default initialiseTypescriptApp
