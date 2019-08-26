@@ -1,6 +1,6 @@
 {
   "name": "@cdimitroulas/typescript-scripts",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A collection of scripts related to typescript development",
   "repository": {
     "type": "git",
@@ -9,8 +9,8 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf lib/ && tsc",
-    "lint": "eslint --ext .js,.ts scripts/ index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext .js,.ts scripts/ index.ts",
+    "test": "npm run lint"
   },
   "keywords": [
     "typescript",
