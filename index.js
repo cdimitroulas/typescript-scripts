@@ -2,7 +2,7 @@
 
 const tsNode = require('ts-node')
 
-const { init } = require('./dist')
+const { init } = require('./lib')
 
 tsNode.register({})
 

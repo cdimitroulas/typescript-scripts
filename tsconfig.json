@@ -2,9 +2,11 @@
   "compilerOptions": {
     "target": "ES2016",
     "module": "commonjs",
-    "outDir": "dist",
+    "declaration": true,
+    "outDir": "lib",
     "noEmitOnError": true,
     "strict": true,
     "esModuleInterop": true
-  }
+  },
+  "include": ["scripts"]
 }
