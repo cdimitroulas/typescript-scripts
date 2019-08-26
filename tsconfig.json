@@ -8,5 +8,5 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "include": ["scripts"]
+  "include": ["index.ts", "scripts"]
 }

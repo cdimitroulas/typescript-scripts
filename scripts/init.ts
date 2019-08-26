@@ -5,12 +5,12 @@ import path from "path";
 const appDirectory = fs.realpathSync(process.cwd());
 const tsConfigPath = path.resolve(appDirectory, "tsconfig.json");
 
-function initialiseTypescriptApp() {
+function initialiseTypescriptApp(): void {
   checkTypescriptIsInstalled();
   createTsConfig();
 };
 
-function checkTypescriptIsInstalled() {
+function checkTypescriptIsInstalled(): void {
   try {
     require(path.resolve(appDirectory, 'node_modules/typescript'));
   } catch (_) {
@@ -20,7 +20,7 @@ function checkTypescriptIsInstalled() {
   }
 }
 
-function createTsConfig() {
+function createTsConfig(): void {
   if (tsConfigExists()) {
     console.log("Your repository already contains a tsconfig.json file. If you would like this @cdimitroulas/typescript-scripts to create a new one for you then please delete it and run the init script again");
     return;
@@ -45,7 +45,7 @@ function createTsConfig() {
   return;
 }
 
-function tsConfigExists() {
+function tsConfigExists(): boolean {
   return fs.existsSync(tsConfigPath);
 };
 
