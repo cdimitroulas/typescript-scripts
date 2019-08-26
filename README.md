@@ -6,15 +6,22 @@ centralized place rather than repeating the same process for each codebase.
 
 Inspired by `react-scripts` and `kcd-scripts`.
 
+## Installation
 
-## Scripts
+`npm install @cdimitroulas/typescript-scripts`
 
-- `@cdimitroulas/typescript-scripts init`
+## Usage
+
+The `typescript-scripts` script will be available in `node_modules/.bin/typescript-scripts` so
+you can either reference it directly by using that path, use `npx typescript-scripts` or if you
+are using it within `package.json` simply write `typescript-scripts [script name]`.
+
+- `typescript-scripts init`
 
     Initialises a repository for Typescript development. Currently it only checks that typescript
     is installed and creates a tsconfig.json file for you if it doesn't already exist.
 
-- `@cdimitroulas/typescript-scripts lint [options] [files/dirs]`
+- `typescript-scripts lint [options] [files/dirs]`
 
     Lints the specified files and directories. Defaults to checking for .js and .ts extensions.
 
