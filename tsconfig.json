@@ -6,7 +6,8 @@
     "outDir": "lib",
     "noEmitOnError": true,
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
-  "include": ["index.ts", "scripts"]
+  "include": ["index.ts", ".eslintrc.json", "scripts"]
 }

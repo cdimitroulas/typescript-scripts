@@ -1,6 +1,6 @@
 "use strict";
 
-import { init } from "./scripts";
+import { init, lint } from "./scripts";
 
 const args = process.argv.slice(2);
 const scriptName = args[0];
@@ -17,6 +17,12 @@ switch (scriptName) {
     init();
     process.exit(0);
     break;
+
+  case "lint": {
+    const status = lint();
+    process.exit(status)
+    break;
+  }
 
   default:
     console.log(`Unknown script '${scriptName}' called. Did you make a typo?`);
