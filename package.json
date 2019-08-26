@@ -6,7 +6,8 @@
     "type": "git",
     "url": "https://github.com/cdimitroulas/typescript-scripts.git"
   },
-  "main": "index.js",
+  "main": "lib/",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "rm -rf lib/ && tsc",
     "lint": "eslint --ext .js,.ts scripts/ index.ts",
