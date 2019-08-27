@@ -4,7 +4,7 @@ import spawn from "cross-spawn";
 import yargsParser from "yargs-parser";
 
 const appDirectory = fs.realpathSync(process.cwd());
-const args = process.argv.slice(2);
+const args = process.argv.slice(3);
 const parsedArgs = yargsParser(args);
 
 function lint(): number {
@@ -13,12 +13,16 @@ function lint(): number {
   const otherArgs = args.filter(arg => !parsedArgs._.includes(arg));
 
   const result = spawn.sync(
-    path.join(__dirname, "../node_modules/.bin/eslint"),
+    path.join(appDirectory, "./node_modules/.bin/eslint"),
     ["--config", configPath, "--ext", ".js,.ts", ...otherArgs, ...filesToLint],
     { stdio: "inherit" }
   );
 
-  return result.status ? result.status : 0;
+  if (result.error) {
+    console.error(result.error)
+  }
+
+  return typeof result.status === 'number' ? result.status : 1;
 }
 
 function getEslintConfigPath(): string {

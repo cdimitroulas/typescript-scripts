@@ -24,7 +24,8 @@
   "author": "Christos Dimitroulas",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^12.7.2",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
     "cross-spawn": "^6.0.5",
     "eslint": "^6.2.2",
     "eslint-config-prettier": "^6.1.0",
@@ -35,9 +36,8 @@
   },
   "devDependencies": {
     "@types/cross-spawn": "^6.0.0",
+    "@types/node": "^12.7.2",
     "@types/yargs-parser": "^13.0.0",
-    "@typescript-eslint/eslint-plugin": "^2.0.0",
-    "@typescript-eslint/parser": "^2.0.0",
     "np": "^5.0.3"
   },
   "bin": "./lib/index.js",
