@@ -14,8 +14,15 @@ const args = process.argv.slice(3);
 
 function test(): number {
   const result = spawn.sync(
-    path.join(appDirectory, "./node_modules/.bin/ts-mocha"),
-    args, // TODO improve this so that sane default mocha flags are set
+    path.join(appDirectory, "./node_modules/.bin/mocha"),
+    [
+      "-r",
+      "ts-node/register",
+      "--watch-extensions",
+      "ts",
+      "--recursive",
+      ...args
+    ], // TODO improve this so that sane default mocha flags are set
     { stdio: "inherit" }
   );
 
