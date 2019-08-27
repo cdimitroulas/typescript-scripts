@@ -2,7 +2,7 @@
 
 "use strict";
 
-import { init, lint } from "./scripts";
+import { format, init, lint } from "./scripts";
 
 const args = process.argv.slice(2);
 const scriptName = args[0];
@@ -17,6 +17,11 @@ if (!scriptName) {
 switch (scriptName) {
   case "init":
     init();
+    process.exit(0);
+    break;
+
+  case "format":
+    format();
     process.exit(0);
     break;
 

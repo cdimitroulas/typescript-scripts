@@ -35,6 +35,12 @@ are using it within `package.json` simply write `typescript-scripts [script name
 
   All the usual eslint flags can be passed to this script, they will be passed on to eslint.
 
+- `typescript-scripts format`
+
+  Formats all the files in the repository using prettier.
+
+  TODO - allow passing an argument to configure which files/folders should be formatted
+
 - compile (TODO)
 
 - test (TODO)
