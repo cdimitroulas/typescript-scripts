@@ -19,10 +19,10 @@ function lint(): number {
   );
 
   if (result.error) {
-    console.error(result.error)
+    console.error(result.error);
   }
 
-  return typeof result.status === 'number' ? result.status : 1;
+  return typeof result.status === "number" ? result.status : 1;
 }
 
 function getEslintConfigPath(): string {

@@ -22,7 +22,7 @@ switch (scriptName) {
 
   case "lint": {
     const status = lint();
-    process.exit(status)
+    process.exit(status);
     break;
   }
 

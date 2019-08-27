@@ -43,5 +43,10 @@
   "bin": "./lib/index.js",
   "publishConfig": {
     "access": "public"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
