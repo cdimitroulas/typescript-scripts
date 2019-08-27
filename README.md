@@ -39,6 +39,19 @@ are using it within `package.json` simply write `typescript-scripts [script name
 
   Formats all the files in the repository using prettier.
 
+  If you would like to run prettier automatically as a pre-commit hook on staged files then:
+
+  1. `npm install --save-dev husky`
+  2. Add this to your package.json:
+
+  ```json
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+  ```
+
   TODO - allow passing an argument to configure which files/folders should be formatted
 
 - compile (TODO)
