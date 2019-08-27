@@ -1,16 +1,10 @@
 import path from "path";
 import spawn from "cross-spawn";
-import yargsParser from "yargs-parser";
+// import yargsParser from "yargs-parser";
 
 import { appDirectory } from "./utils";
 
 const args = process.argv.slice(3);
-
-// const config =
-//   !args.includes('--config') &&
-//   !hasFile('jest.config.js')
-//     ? ['--config', JSON.stringify(require('../config/jest.config'))]
-//     : []
 
 function test(): number {
   const result = spawn.sync(
