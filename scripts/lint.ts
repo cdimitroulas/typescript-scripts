@@ -1,9 +1,9 @@
-import fs from "fs";
 import path from "path";
 import spawn from "cross-spawn";
 import yargsParser from "yargs-parser";
 
-const appDirectory = fs.realpathSync(process.cwd());
+import { appDirectory, hasFile } from "./utils";
+
 const args = process.argv.slice(3);
 const parsedArgs = yargsParser(args);
 
@@ -47,10 +47,6 @@ function getFilesToLint(): string[] {
   );
 
   return filesToLint.length > 0 ? filesToLint : ["."];
-}
-
-function hasFile(fileName: string): boolean {
-  return fs.existsSync(path.join(appDirectory, fileName));
 }
 
 export default lint;
