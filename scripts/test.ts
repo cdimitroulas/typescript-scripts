@@ -1,6 +1,5 @@
 import path from "path";
 import spawn from "cross-spawn";
-// import yargsParser from "yargs-parser";
 
 import { appDirectory } from "./utils";
 
