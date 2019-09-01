@@ -54,6 +54,11 @@ are using it within `package.json` simply write `typescript-scripts [script name
 
   TODO - allow passing an argument to configure which files/folders should be formatted
 
-- compile (TODO)
+- `typescript-scripts test [files/directories/globs]`
 
-- test (TODO)
+  Runs tests with mocha using `ts-node` to execute Typescript files. Pass `--watch` to watch
+  for changes and rerun the tests automatically.
+
+  Accepts all the usual [mocha CLI flags and options](https://mochajs.org/#command-line-usage).
+
+- compile (TODO)
