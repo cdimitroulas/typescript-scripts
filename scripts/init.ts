@@ -2,8 +2,7 @@ import fs from "fs";
 import os from "os";
 import path from "path";
 
-const appDirectory = fs.realpathSync(process.cwd());
-const tsConfigPath = path.resolve(appDirectory, "tsconfig.json");
+import { appDirectory, tsConfigPath } from "./utils";
 
 function initialiseTypescriptApp(): void {
   checkTypescriptIsInstalled();
