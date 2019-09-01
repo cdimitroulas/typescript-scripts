@@ -29,8 +29,10 @@ are using it within `package.json` simply write `typescript-scripts [script name
   your repository does not have an `.eslintrc` or `.eslintrc.json`. You can also choose to
   extend the eslint configuration by adding this to your config file:
 
-  ```
-  {"extends": "./node_modules/@cdimitroulas/typescript-scripts/.eslintrc.json"}
+  ```json
+  {
+    "extends": "./node_modules/@cdimitroulas/typescript-scripts/.eslintrc.json"
+  }
   ```
 
   All the usual eslint flags can be passed to this script, they will be passed on to eslint.
@@ -44,13 +46,13 @@ are using it within `package.json` simply write `typescript-scripts [script name
   1. `npm install --save-dev husky`
   2. Add this to your package.json:
 
-  ```json
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
-  }
-  ```
+     ```json
+       "husky": {
+         "hooks": {
+           "pre-commit": "pretty-quick --staged"
+         }
+       }
+     ```
 
   TODO - allow passing an argument to configure which files/folders should be formatted
 
