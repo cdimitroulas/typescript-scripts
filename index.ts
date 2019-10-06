@@ -2,7 +2,7 @@
 
 "use strict";
 
-import { format, init, lint, test } from "./scripts";
+import { format, init, lint, run, test } from "./scripts";
 
 const args = process.argv.slice(2);
 const scriptName = args[0];
@@ -27,6 +27,12 @@ switch (scriptName) {
 
   case "lint": {
     const status = lint();
+    process.exit(status);
+    break;
+  }
+
+  case "run": {
+    const status = run();
     process.exit(status);
     break;
   }
