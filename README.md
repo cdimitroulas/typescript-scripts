@@ -56,6 +56,14 @@ are using it within `package.json` simply write `typescript-scripts [script name
 
   TODO - allow passing an argument to configure which files/folders should be formatted
 
+- `typescript-scripts run [entrypoint]`
+
+  Runs typescript files using `ts-node`. Useful for creating a run/start command which
+  can be used to run a project for local development.
+
+  For example, add a script to your package.json called `dev` which runs
+  `typescript-scripts run src/index.ts` (replace the path to your project entrypoint)
+
 - `typescript-scripts test [files/directories/globs]`
 
   Runs tests with mocha using `ts-node` to execute Typescript files. Pass `--watch` to watch
