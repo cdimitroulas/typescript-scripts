@@ -42,7 +42,7 @@
     "@types/cross-spawn": "^6.0.0",
     "@types/node": "^12.7.2",
     "@types/yargs-parser": "^13.0.0",
-    "np": "^5.0.3"
+    "np": "^6.2.0"
   },
   "bin": "./lib/index.js",
   "publishConfig": {
