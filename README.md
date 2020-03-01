@@ -6,6 +6,11 @@ centralized place rather than repeating the same process for each codebase.
 
 Inspired by `react-scripts` and `kcd-scripts`.
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+
 ## Installation
 
 `npm install @cdimitroulas/typescript-scripts`
@@ -13,15 +18,15 @@ Inspired by `react-scripts` and `kcd-scripts`.
 ## Usage
 
 The `typescript-scripts` script will be available in `node_modules/.bin/typescript-scripts` so
-you can either reference it directly by using that path, use `npx typescript-scripts` or if you
-are using it within `package.json` simply write `typescript-scripts [script name]`.
+you can either reference it directly by using that path or use `npx typescript-scripts`. If you
+are using it from a `package.json` script, you can simply write `typescript-scripts [script name]`.
 
-- `typescript-scripts init`
+- `init`
 
   Initialises a repository for Typescript development. Currently it only checks that typescript
   is installed and creates a tsconfig.json file for you if it doesn't already exist.
 
-- `typescript-scripts lint [options] [files/dirs]`
+- `lint [options] [files/dirs]`
 
   Lints the specified files and directories. Defaults to checking for .js and .ts extensions.
 
@@ -37,7 +42,7 @@ are using it within `package.json` simply write `typescript-scripts [script name
 
   All the usual eslint flags can be passed to this script, they will be passed on to eslint.
 
-- `typescript-scripts format`
+- `format`
 
   Formats all the files in the repository using prettier.
 
@@ -56,7 +61,7 @@ are using it within `package.json` simply write `typescript-scripts [script name
 
   TODO - allow passing an argument to configure which files/folders should be formatted
 
-- `typescript-scripts run [entrypoint]`
+- `run [entrypoint]`
 
   Runs typescript files using `ts-node`. Useful for creating a run/start command which
   can be used to run a project for local development.
@@ -64,14 +69,14 @@ are using it within `package.json` simply write `typescript-scripts [script name
   For example, add a script to your package.json called `dev` which runs
   `typescript-scripts run src/index.ts` (replace the path to your project entrypoint)
 
-- `typescript-scripts test [files/directories/globs]`
+- `test [files/directories/globs]`
 
   Runs tests with mocha using `ts-node` to execute Typescript files. Pass `--watch` to watch
   for changes and rerun the tests automatically.
 
   Accepts all the usual [mocha CLI flags and options](https://mochajs.org/#command-line-usage).
 
-- `typescript-scripts compile`
+- `compile`
 
   Runs the `tsc` compiler.
 

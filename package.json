@@ -1,6 +1,6 @@
 {
   "name": "@cdimitroulas/typescript-scripts",
-  "version": "0.5.2",
+  "version": "0.5.0",
   "description": "A collection of scripts related to typescript development",
   "repository": {
     "type": "git",
@@ -42,7 +42,7 @@
     "@types/cross-spawn": "^6.0.0",
     "@types/node": "^12.7.2",
     "@types/yargs-parser": "^13.0.0",
-    "np": "^6.2.0"
+    "np": "^5.2.1"
   },
   "bin": "./lib/index.js",
   "publishConfig": {
