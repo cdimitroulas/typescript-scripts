@@ -71,4 +71,8 @@ are using it within `package.json` simply write `typescript-scripts [script name
 
   Accepts all the usual [mocha CLI flags and options](https://mochajs.org/#command-line-usage).
 
-- compile (TODO)
+- `typescript-scripts compile`
+
+  Runs the `tsc` compiler.
+
+  Accepts all the usual [tsc CLI flags and options](https://www.typescriptlang.org/docs/handbook/compiler-options.html).
