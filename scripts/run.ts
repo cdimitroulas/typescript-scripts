@@ -1,16 +1,11 @@
-import path from "path";
 import spawn from "cross-spawn";
-
-import { appDirectory } from "./utils";
 
 const args = process.argv.slice(3);
 
 function run(): number {
-  const result = spawn.sync(
-    path.join(appDirectory, "./node_modules/.bin/ts-node"),
-    args,
-    { stdio: "inherit" }
-  );
+  const result = spawn.sync("node", ["-r", "ts-node/register", ...args], {
+    stdio: "inherit"
+  });
 
   if (result.error) {
     console.error(result.error);
