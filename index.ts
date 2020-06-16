@@ -20,15 +20,17 @@ switch (scriptName) {
     process.exit(0);
     break;
 
-  case "compile":
-    compile();
-    process.exit(0);
+  case "compile": {
+    const status = compile();
+    process.exit(status);
     break;
+  }
 
-  case "format":
-    format();
-    process.exit(0);
+  case "format": {
+    const status = format();
+    process.exit(status);
     break;
+  }
 
   case "help":
     help();
