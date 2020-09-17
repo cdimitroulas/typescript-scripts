@@ -1,6 +1,6 @@
 {
   "name": "@cdimitroulas/typescript-scripts",
-  "version": "1.1.3",
+  "version": "2.0.0",
   "description": "A collection of scripts related to typescript development",
   "repository": {
     "type": "git",
@@ -25,17 +25,17 @@
   "license": "ISC",
   "dependencies": {
     "@types/mocha": "^5.2.7",
-    "@typescript-eslint/eslint-plugin": "^3.0.2",
-    "@typescript-eslint/parser": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
     "cross-spawn": "^6.0.5",
-    "eslint": "^6.2.2",
+    "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.1.0",
     "husky": "^3.0.4",
     "mocha": "^6.2.0",
     "prettier": "1.18.2",
     "pretty-quick": "^1.11.1",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.9.3",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2",
     "yargs-parser": "^13.1.1"
   },
   "devDependencies": {
