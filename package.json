@@ -1,6 +1,6 @@
 {
   "name": "@cdimitroulas/typescript-scripts",
-  "version": "1.1.3",
+  "version": "2.0.0",
   "description": "A collection of scripts related to typescript development",
   "repository": {
     "type": "git",
