@@ -76,6 +76,11 @@ are using it from a `package.json` script, you can simply write `typescript-scri
 
   Accepts all the usual [mocha CLI flags and options](https://mochajs.org/#command-line-usage).
 
+- `test:transpileOnly`
+
+  Same as the `test` command, except it uses the `transpileOnly` function of the TSC compiler
+  to make it extra fast (this works by only transpiling the code but not checking for errors)
+
 - `compile`
 
   Runs the `tsc` compiler.

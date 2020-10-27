@@ -2,7 +2,16 @@
 
 "use strict";
 
-import { compile, format, help, init, lint, run, test } from "./scripts";
+import {
+  compile,
+  format,
+  help,
+  init,
+  lint,
+  run,
+  test,
+  testTranspileOnly
+} from "./scripts";
 
 const args = process.argv.slice(2);
 const scriptName = args[0];
@@ -51,6 +60,12 @@ switch (scriptName) {
 
   case "test": {
     const status = test();
+    process.exit(status);
+    break;
+  }
+
+  case "test:transpileOnly": {
+    const status = testTranspileOnly();
     process.exit(status);
     break;
   }

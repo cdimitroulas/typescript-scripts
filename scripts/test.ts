@@ -5,17 +5,10 @@ import { appDirectory } from "./utils";
 
 const args = process.argv.slice(3);
 
-function test(): number {
+const runMochaProcess = (args: string[]) => {
   const result = spawn.sync(
     path.join(appDirectory, "./node_modules/.bin/mocha"),
-    [
-      "-r",
-      "ts-node/register",
-      "--watch-extensions",
-      "ts",
-      "--recursive",
-      ...args
-    ], // TODO improve this so that sane default mocha flags are set
+    args,
     { stdio: "inherit" }
   );
 
@@ -24,6 +17,33 @@ function test(): number {
   }
 
   return typeof result.status === "number" ? result.status : 1;
+};
+
+function test(): number {
+  const result = runMochaProcess([
+    "-r",
+    "ts-node/register",
+    "--watch-extensions",
+    "ts",
+    "--recursive",
+    ...args
+  ]);
+
+  return result;
+}
+
+function testTranspileOnly(): number {
+  const result = runMochaProcess([
+    "-r",
+    "ts-node/register/transpile-only",
+    "--watch-extensions",
+    "ts",
+    "--recursive",
+    ...args
+  ]);
+
+  return result;
 }
 
 export default test;
+export { testTranspileOnly };
