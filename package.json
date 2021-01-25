@@ -22,7 +22,7 @@
     "compiling"
   ],
   "author": "Christos Dimitroulas",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@types/mocha": "^5.2.7",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
