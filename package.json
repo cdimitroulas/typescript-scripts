@@ -28,7 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
     "cross-spawn": "^6.0.5",
-    "eslint": "^7.9.0",
+    "eslint": "^7.26.0",
     "eslint-config-prettier": "^6.1.0",
     "husky": "^3.0.4",
     "mocha": "^8.4.0",
