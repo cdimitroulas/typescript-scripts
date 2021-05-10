@@ -3,7 +3,6 @@ import path from "path";
 import spawn from "cross-spawn";
 
 const appDirectory = fs.realpathSync(process.cwd());
-// const args = process.argv.slice(3);
 
 function format(): number {
   const result = spawn.sync(
