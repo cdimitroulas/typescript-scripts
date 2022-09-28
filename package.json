@@ -12,7 +12,7 @@
     "build": "rm -rf lib/ && tsc",
     "lint": "eslint --ext .js,.ts scripts/ index.ts",
     "prepare": "npm run build",
-    "test": "npm run lint"
+    "test": "npm run lint && tsc --noEmit"
   },
   "keywords": [
     "typescript",
@@ -25,10 +25,10 @@
   "license": "MIT",
   "dependencies": {
     "@types/mocha": "^8.2.2",
-    "@typescript-eslint/eslint-plugin": "^4.1.1",
-    "@typescript-eslint/parser": "^4.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
     "cross-spawn": "^6.0.5",
-    "eslint": "^7.26.0",
+    "eslint": "^8.24.0",
     "eslint-config-prettier": "^6.1.0",
     "husky": "^3.0.4",
     "mocha": "^8.4.0",
