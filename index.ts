@@ -27,47 +27,39 @@ switch (scriptName) {
   case "init":
     init();
     process.exit(0);
-    break;
 
   case "compile": {
     const status = compile();
     process.exit(status);
-    break;
   }
 
   case "format": {
     const status = format();
     process.exit(status);
-    break;
   }
 
   case "help":
     help();
     process.exit(0);
-    break;
 
   case "lint": {
     const status = lint();
     process.exit(status);
-    break;
   }
 
   case "run": {
     const status = run();
     process.exit(status);
-    break;
   }
 
   case "test": {
     const status = test();
     process.exit(status);
-    break;
   }
 
   case "test:transpileOnly": {
     const status = testTranspileOnly();
     process.exit(status);
-    break;
   }
 
   default:
