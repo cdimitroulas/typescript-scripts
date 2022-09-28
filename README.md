@@ -86,3 +86,13 @@ are using it from a `package.json` script, you can simply write `typescript-scri
   Runs the `tsc` compiler.
 
   Accepts all the usual [tsc CLI flags and options](https://www.typescriptlang.org/docs/handbook/compiler-options.html).
+
+## Development
+
+- `npm install`
+
+## Packaging/Deployment
+
+Ensure you are logged in with npm -> `npm login`
+
+Run `npx np <minor | patch>` and go through the instructions
